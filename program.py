@@ -24,7 +24,7 @@ unit_cur = int(input("Current downstairs bill units : "))
 up_pre = sujith_pre
 up_cur = float(input("Current upstairs units : "))
 
-tot_unit = unit_cur - unit_pre
+tot_unit = unit_cur - unit_pre 
 up_unit = up_cur - up_pre
 rpu = bill / tot_unit
 down_unit = tot_unit - up_unit
