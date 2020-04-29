@@ -5,7 +5,7 @@ nl = "\n"
 pattern1 = "------------------------------------------"
 pattern2 = "*******************************************"
 
-wb = openpyxl.load_workbook("C:\\Users\\lalpr\\Desktop\\CURRENT_BILL\\sujith_readings_new.xlsx")
+wb = openpyxl.load_workbook("C:\\Users\\...readings_new.xlsx")
 sheet = wb.active
 a = sheet.columns
 w = []
@@ -45,13 +45,13 @@ print("Upstairs units used : ", up_unit)
 print("Upstairs amount payable : ", up_unit*rpu, "INR")
 
 # ADDING DATA AND SAVING IT
-sheet.append([date,up_cur,unit_cur,bill]) # Adding data
-wb.save("C:\\Users\\lalpr\\Desktop\\CURRENT_BILL\\sujith_readings_new.xlsx") # Saving data
+sheet.append([date,up_cur,unit_cur,bill])                                            # Adding data
+wb.save("C:\\Users\\...readings_new.xlsx")                                          # Saving data
 
 
-outFilename = "C:\\Users\\lalpr\\Desktop\\CURRENT_BILL\\MY_BILL\\"+str(date)+".txt"
+outFilename = "C:\\Users\\"+str(date)+".txt"                         #create a .txt file in the location with file name as date
 outFilename = open(outFilename,"w+")
-outFilename.write(""" 
+outFilename.write("""                                       
 Bill amount : """ + str(bill) + nl +"""
 Previous bill units : """+str(ram_pre)+ nl+"""
 Current bill units : """+str(unit_cur)+nl+"""
@@ -66,7 +66,7 @@ Downstairs amount payable :  """+str(down_unit*rpu)+""" INR
 Upstairs units used :  """+ str(up_unit)+nl+"""
 Upstairs amount payable :  """+str(up_unit*rpu)+ """INR
 
-""")
-outFilename.close()
+""")                                                            #inside write(" ") is the format I need while saving the text document
+outFilename.close()                                             #and the data in """ """ is multiline data 
 
 
