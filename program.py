@@ -40,7 +40,7 @@ print("Downstairs units used : ", down_unit)
 print("Downstairs amount payable : ", down_unit*rpu, "INR")
 
 print(pattern2)
-
+ 
 print("Upstairs units used : ", up_unit)
 print("Upstairs amount payable : ", up_unit*rpu, "INR")
 
