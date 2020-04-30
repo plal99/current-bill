@@ -1,0 +1,20 @@
+My next thing to do is to automate everything so that my data can be uploaded to google drive so that the data is secure in the cloud.
+There was mainly 2 ways to do this
+
+1. import selenium
+2. import pyautogui
+
+Issues of selenium
+------------------
+a. Google is highly secure.
+b. Because google is too secure, the chrome driver extension of selenium is not enough secure for logging in. So Google prompts to use
+    another browser to login
+c. So I stopped developing using selenium.(But no issue is there for logging into INSTAGRAM. ps I also tried making an instagram bot a while ago)
+
+So I am proceeding with pyautogui
+
+There are some issues with pyautogui :-
+  a. If some tab is open in the background, and if that tab is maximized, when we open chrome it is maximized view
+      if the tab is minimized, the opened chrome using pyautogui is in minimized and its location on the monitor is somewhat mid-screen
+      SOLUTION : Close all tabs befoe running this.
+      
