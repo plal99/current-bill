@@ -1,0 +1,3 @@
+By creating a bat file you can run the program from anywhere by just double clicking the .bat file
+Steps for doing it is clearly given here : https://datatofish.com/batch-python-script/
+(update : no need for "pause" in the bat file....just the location of python.exe and yourScript.py)
