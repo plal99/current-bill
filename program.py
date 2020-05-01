@@ -12,11 +12,11 @@ w = []
 for item in a:
     w.append(item)                                                                  # all data is appended into a list
                                                                                     # data is taken from columns
-sujith_pre = w[1][-1].value                                                   # accessing the data 
+sujith_pre = w[1][-1].value                                                   # accessing the data
 ram_pre = w[2][-1].value
 amt = w[3][-1].value
 date = str(datetime.date.today())
-date1 = str(datetime.datetime.now())
+date1 = str(datetime.datetime.now())                        # datetime module using
 
 bill = int(input("Bill amount : "))
 unit_pre = ram_pre
@@ -40,7 +40,7 @@ print("Downstairs units used : ", down_unit)
 print("Downstairs amount payable : ", down_unit*rpu, "INR")
 
 print(pattern2)
- 
+
 print("Upstairs units used : ", up_unit)
 print("Upstairs amount payable : ", up_unit*rpu, "INR")
 
@@ -51,7 +51,7 @@ wb.save("C:\\Users\\...readings_new.xlsx")                                      
 
 outFilename = "C:\\Users\\"+str(date)+".txt"                         #create a .txt file in the location with file name as date
 outFilename = open(outFilename,"w+")
-outFilename.write("""                                       
+outFilename.write("""
 Bill amount : """ + str(bill) + nl +"""
 Previous bill units : """+str(ram_pre)+ nl+"""
 Current bill units : """+str(unit_cur)+nl+"""
@@ -67,6 +67,4 @@ Upstairs units used :  """+ str(up_unit)+nl+"""
 Upstairs amount payable :  """+str(up_unit*rpu)+ """INR
 
 """)                                                            #inside {line 54} outFilename.write("...") is the format I need while saving the text document
-outFilename.close()                                             #and the data in """ """ is multiline data 
-
-
+outFilename.close()                                             #and the data in """ """ is multiline data
