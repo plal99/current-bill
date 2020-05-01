@@ -9,7 +9,7 @@ sleep(2)
 pyautogui.click(194,51)
 pyautogui.press("backspace")
 pyautogui.typewrite("https://drive.google.com/drive/my-drive", interval = 0.01)          # intervalForBeauty
-pyautogui.press("enter")
+pyautogui.press("enter") 
 sleep(5)
 pyautogui.click(58,198)                                                                  # addInDrive
 sleep(0.5)
