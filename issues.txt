@@ -14,7 +14,4 @@ c. So I stopped developing using selenium.(But no issue is there for logging int
 So I am proceeding with pyautogui
 
 There are some issues with pyautogui :-
-  a. If some tab is open in the background, and if that tab is maximized, when we open chrome it is maximized view
-      if the tab is minimized, the opened chrome using pyautogui is in minimized and its location on the monitor is somewhat mid-screen
-      SOLUTION : Close all tabs befoe running this.
-      
+  a.
