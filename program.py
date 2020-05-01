@@ -16,7 +16,7 @@ sujith_pre = w[1][-1].value                                                   # 
 ram_pre = w[2][-1].value
 amt = w[3][-1].value
 date = str(datetime.date.today())
-date1 = str(datetime.datetime.now())                        # datetime module using
+date1 = str(datetime.datetime.now())                              # datetime module using
 
 bill = int(input("Bill amount : "))
 unit_pre = ram_pre
