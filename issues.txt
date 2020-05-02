@@ -9,9 +9,13 @@ Issues of selenium
 a. Google is highly secure.
 b. Because google is too secure, the chrome driver extension of selenium is not enough secure for logging in. So Google prompts to use
     another browser to login
-c. So I stopped developing using selenium.(But no issue is there for logging into INSTAGRAM. ps I also tried making an instagram bot a while ago)
 
-So I am proceeding with pyautogui
+So I stopped developing using selenium.(But no issue is there for logging into INSTAGRAM. ps I also tried making an instagram bot a while ago)
+
+I am proceeding with pyautogui
 
 There are some issues with pyautogui :-
-  a.
+  a. Of course, this is program is designed for my computer. The values in the braces are coordinates of the pixel that need to be clicked.
+      So to get the pixel values, I needed to create a small sub-program just to get the coordinates of the pixel needed to click. This means I had to
+      run the sub-program by placing the mouse at my needed position and run the sub-program without moving the mouse as the sub-program outputs
+      the mouse location. So I had to find all the pixel values individually.
